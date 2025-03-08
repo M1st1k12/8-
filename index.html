@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>З 8 Березня, мамо!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        body {
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Pacifico', cursive;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        p {
+            font-size: 20px;
+        }
+        button {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background: linear-gradient(135deg, #ff5a8a, #ff4f9a);
+            transform: scale(1.1);
+        }
+        img {
+            width: 320px;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+        #greeting {
+            display: none;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-in-out;
+        }
+        #roseImage {
+            display: none;
+            width: 200px;
+            margin: 10px auto 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>З 8 Березня, люба матусю! 💐</h1>
+        <p>Бажаю тобі радості, здоров'я, ніжності та здійснення всіх мрій! ✨</p>
+        <img src="images/0-02-04-4901a28357ea130c3794a71bcf0ccedb48a64293e45f3f3ba2ac9e29f0f47579_510603e70df95393.jpg" alt="мама">
+        <br>
+        <button onclick="showGreeting()">Натисни для сюрпризу 💖</button>
+        <p id="greeting">🌸 Будь щасливою та коханою, мамо! 🌸</p>
+        <img id="roseImage" src="images/1368463_2.jpg" alt="Троянди">
+    </div>
+
+    <script>
+        function showGreeting() {
+            var greeting = document.getElementById("greeting");
+            var roseImage = document.getElementById("roseImage");
+            greeting.style.display = "block";
+            roseImage.style.display = "block";
+            greeting.style.animation = "fadeIn 1s ease-in-out";
+        }
+    </script>
+</body>
+</html>
